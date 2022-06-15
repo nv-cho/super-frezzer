@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Text, Button, Image } from "@nextui-org/react";
+import { Text, Button } from "@nextui-org/react";
 import { Link } from "react-scroll";
 
 function App() {
