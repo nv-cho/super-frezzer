@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 import { Text, Button } from "@nextui-org/react";
 import { Link } from "react-scroll";
-import db from "./lib/init-firebase";
-import { ref, onValue } from "firebase/database";
+// import db from "./lib/init-firebase";
+// import { ref, onValue } from "firebase/database";
 
 function App() {
   const [temperature, setTemperature] = useState("");
   const [temperatureVariable, setTemperatureVariable] = useState(null);
 
-  useEffect(() => {
-    const frezzerRef = ref(db, "TemperaturaUltraFreezer");
-    onValue(frezzerRef, (snapshot) => {
-      const data = snapshot.val();
-      const temperature = data;
-      setTemperature(temperature);
-    });
-  }, []);
+  // useEffect(() => {
+  //   const frezzerRef = ref(db, "TemperaturaUltraFreezer");
+  //   onValue(frezzerRef, (snapshot) => {
+  //     const data = snapshot.val();
+  //     const temperature = data;
+  //     setTemperature(temperature);
+  //   });
+  // }, []);
 
   useEffect(() => {
     if (temperature > -90 && temperature < -70) {
