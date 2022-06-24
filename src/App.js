@@ -34,7 +34,7 @@ function App() {
       <div className="h-screen bg-cover bg-bottom bg-fixed bg-[url('/img/hitaliano.jpg')] brightness-50" />
       <div className="absolute h-full w-full">
         <div className="flex flex-col h-full text-center justify-center items-center gap-10">
-          <Text h1 size="4vw" color="#ffffff" weight="bold">
+          <Text h1 size="4.5vw" color="#ffffff" weight="bold">
             CENTRO DE MONITOREO
           </Text>
 
@@ -47,11 +47,11 @@ function App() {
       </div>
       <div id="main" className="flex flex-col h-screen background">
         <div className="flex flex-col lg:flex-row h-full pt-20 pl-5 text-center justify-center items-center">
-          <Text size="4vw" color="#ffffff" weight="bold">
+          <Text size="4.5vw" color="#ffffff" weight="bold">
             TEMPERATURA ACTUAL:
           </Text>
           <span className="sm:ml-4">
-            <Text size="4vw" color="#ffffff" weight="bold">
+            <Text size="4.5vw" color="#ffffff" weight="bold">
               90°C
             </Text>
           </span>
