@@ -18,10 +18,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log(temperature);
-  }, [temperature]);
-
-  useEffect(() => {
     if (temperature > -90 && temperature < -70) {
       setTemperatureVariable(<Text color="success">{temperature}</Text>);
     } else if (temperature < -90 || temperature > -70) {
@@ -51,8 +47,8 @@ function App() {
             TEMPERATURA ACTUAL:
           </Text>
           <span className="sm:ml-4">
-            <Text size="4.5vw" color="#ffffff" weight="bold">
-              90°C
+            <Text size="4.5vw" color="success" weight="bold">
+              20°C
             </Text>
           </span>
         </div>
